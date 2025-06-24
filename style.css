@@ -391,7 +391,7 @@
         right: 20%;
       }
       .container2{
-        display: inline-block;
+        display: block;
         justify-content: center;
       }
    .baru{
