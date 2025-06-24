@@ -333,7 +333,7 @@
       transform: scale(1.1);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       .nav-links {
         display: none;
        justify-content: flex-end;
