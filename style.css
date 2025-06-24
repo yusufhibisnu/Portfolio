@@ -352,7 +352,7 @@
       }
       
       .nav-links.active {
-        display: flex;
+          display: flex;
          justify-content: flex-end;
          font-size: 30px;
          text-align: start;
@@ -392,10 +392,10 @@
       }
       .container2{
         display: block;
-      
+       
       }
    .baru{
-     text-align: center;
+    text-align: center;
     padding: 10px;
    }
     }
