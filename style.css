@@ -1,0 +1,400 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background: linear-gradient(to bottom, #010526, #030316);
+      color: white;
+      text-align: center;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background: #050620;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      
+    }
+
+    .logo {
+      font-family: 'Pixelify Sans', sans-serif;
+      color: #F5F550;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .nav-links {
+        font-size: 10px;
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #F5F550;
+    }
+
+    .contact-btn {
+      font-family: 'Roboto Mono', monospace;
+      background: #9E87FF;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 10px;
+    }
+
+    .contact-btn:hover {
+      background: #7f6ae6;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .imgpor img {
+    padding: 25px;
+    width: 500px;  
+    height: auto;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideInUp 1.2s ease-out forwards;
+    }
+    @keyframes slideInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+    }
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    h1.portfolio-title {
+      font-size: 40px;
+      margin-top: 40px;
+      transform: rotate(-2deg);
+      display: inline-block;
+      border: 1px solid #5C66F1;
+      padding: 10px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .tagline {
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 12px;
+      opacity: 0;
+      animation: fadeIn 1.2s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .badges span {
+      display: inline-block;
+      margin: 10px;
+      padding: 6px 12px;
+      border-radius: 15px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .badges span:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .pink { background: #F07CA3; color: white; }
+    .green { background: #BEE557; color: black; }
+    .purple { background: #9E87FF; color: white; }
+    .green2 { background: #BEE557; color: black; 
+    display: inline-block;
+      padding: 10px 20px;
+      border-radius: 40px;
+      transform: rotate(-1.5deg);
+      font-weight: bold;
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+      }
+    .purple2 { background: #9E87FF; color: white; 
+     display: inline-block;
+      padding: 10px 20px;
+      border-radius: 40px;
+      transform: rotate(-1.5deg);
+      font-weight: bold;
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+      }
+    .gambar img{
+        width: 90px;
+        height: auto;
+        z-index: 9;
+        position: absolute;
+        top: 690px;
+        right: 37%;
+    }
+    .pink2 { background: #F07CA3; color: white; 
+        border-radius: 40px;}
+
+    .section-title {
+        padding: 10px;
+      font-size: 30px;
+      margin: 70px 0px 20px;
+    }
+
+    .skills, .projects, .clients, .journey {
+      margin: 40px 0;
+    }
+
+    .skill-icons img {
+      width: 60px;
+      margin: 20px;
+      transition: 0.3s;
+    }
+
+    .skill-icons img:hover {
+      transform: scale(1.1);
+    }
+
+
+
+
+  .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .card {
+      background-color: #1C1761;
+      border-radius: 20px;
+      width: 240px;
+      padding: 10px;
+      padding-bottom: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+       gap: 10px;
+
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      background-color: #8773F0;
+      color: white;
+      font-size: 7px;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .card-title {
+    text-align: left;
+      font-size: 17px;
+      font-weight: bold;
+      margin: 0;
+      gap: 10px;
+    }
+
+    .card-desc {
+        text-align: left;
+      font-size: 9px;
+      color: #d1d5db;
+      margin-top: 4px;
+    }
+
+
+    .clients img {
+      width:50%;
+      height: auto;
+      margin: 20px;
+    }
+
+    .container2 {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .card2 {
+      text-align: left;
+      background-color: #0f1254;
+      border-radius: 30px;
+      padding: 20px 20px;
+      width: 300px;
+      box-sizing: border-box;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .label {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 30px;
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+
+    .education .label {
+      background-color: #e67698;
+    }
+
+    .experience .label {
+      background-color: #c8ff4f;
+      color: #0f1254;
+    }
+
+    .item {
+      margin-bottom: 40px;
+      position: relative;
+      padding-left: 20px;
+      border-left: 3px solid;
+      text-align: left;
+    }
+
+    .education .item {
+      border-color: #e67698;
+    }
+
+    .experience .item {
+      border-color: #c8ff4f;
+    }
+
+    .date {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .desc {
+      font-size: 10px;
+      color: #cccccc;
+    }
+
+    .footer {
+      padding: 20px;
+      font-size: 18px;
+    }
+
+    .footer-icons img {
+      width: 40px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .footer-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+       justify-content: flex-end;
+        flex-direction: column;
+        gap: 15px;
+        background: #050620;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .contact-btn {
+        display: none;
+       
+      }
+      
+      .nav-links.active {
+        display: flex;
+         justify-content: flex-end;
+         font-size: 30px;
+         text-align: start;
+      }
+
+      .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 7px;
+        right: 20px;
+        
+      }
+      .logo {
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-start;
+      }
+      .clients img{
+        width: 300px;
+        height: auto;
+      }
+
+      .imgpor img{
+        margin-top: 40px;
+        padding: 5px;
+        width: 300px;
+        height: auto;
+      }
+      .tagline {
+        font-size: 15px;
+        padding: 15px;
+      }
+      .gambar img{
+        top: 910px;
+        right: 20%;
+      }
+      .container2{
+        display: inline-block;
+        justify-content: center;
+      }
+   .baru{
+    padding: 20px;
+   }
+    }
