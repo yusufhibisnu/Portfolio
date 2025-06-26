@@ -94,6 +94,7 @@ nav {
   margin: 4px 0;
 }
 
+/* 
 h1.portfolio-title {
   font-size: 40px;
   margin-top: 40px;
@@ -114,7 +115,7 @@ h1.portfolio-title {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 .tagline {
   max-width: 600px;
