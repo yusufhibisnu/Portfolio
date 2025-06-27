@@ -194,7 +194,7 @@ h1.portfolio-title {
 
 @keyframes fadeIn {
   to {
-    opacity: 1;
+    opacity: 0, 5;
   }
 }
 
